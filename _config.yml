@@ -1,0 +1,3 @@
+permalink: /updates/:title
+server: true
+pygments: true
