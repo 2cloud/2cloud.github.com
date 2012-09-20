@@ -1,0 +1,97 @@
+@import "base.less";
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.welcome {
+  .well;
+  #gradient > .vertical(#f5f5f5, #eee);
+}
+
+.welcome > .intro, .huge > .btn {
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 1.5;
+}
+
+.welcome p {
+  font-size: @baseFontSize * 1.25;
+  line-height: @baseLineHeight * 1.25;
+}
+
+.updates {
+  margin-top: .5em;
+  font-size: 14px;
+}
+
+.updates li {
+  list-style: none;
+  margin-left: -25px;
+  line-height: 2em;
+}
+
+.pricing > h2 {
+  font-size: @baseFontSize * 2;
+  line-height: @baseFontSize * 2;
+  padding-bottom: @baseFontSize;
+}
+
+.pricing > .intro, .share-container > .intro {
+  font-size: @baseFontSize * 1.25;
+  line-height: @baseLineHeight * 1.25;
+}
+
+.diagram-container {
+  text-align: center;
+}
+
+img.diagram {
+  //.center-block();
+  max-height: 150px;
+  max-width: 150px;
+  padding: @baseLineHeight;
+}
+
+img.diagram.arrow {
+  height: 50px;
+  vertical-align: middle;
+}
+
+.values {
+  .center-block();
+  p {
+    font-size: @baseFontSize * 1.1;
+    line-height: @baseLineHeight * 1.1;
+  }
+}
+
+.highlight {
+//  color: @warningText;
+  background-color: @infoBackground;
+  font-style: normal;
+}
+
+.pricing {
+  .well;
+  margin-top: 20px;
+}
+
+.pricing table {
+  margin: 10px auto;
+  font-size: @baseFontSize * 1.1;
+  line-height: @baseLineHeight * 1.1;
+  width: auto;
+  margin-top: 20px;
+}
+
+.pricing td, .pricing th {
+  min-width: 200px;
+}
+
+.pricing th {
+  text-align: center;
+}
+
+// Responsive ftw
+@import "responsive.less";

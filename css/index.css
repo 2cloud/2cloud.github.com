@@ -3717,6 +3717,15 @@ body {
   font-size: 16.25px;
   line-height: 22.5px;
 }
+.updates {
+  margin-top: .5em;
+  font-size: 14px;
+}
+.updates li {
+  list-style: none;
+  margin-left: -25px;
+  line-height: 2em;
+}
 .pricing > h2 {
   font-size: 26px;
   line-height: 26px;

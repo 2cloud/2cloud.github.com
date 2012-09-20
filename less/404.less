@@ -1,0 +1,32 @@
+@import "base.less";
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.lost-container {
+  .well();
+  background: black !important;
+}
+
+.lost-container > .intro {
+  font-size: @baseFontSize * 1.75;
+  line-height: @baseLineHeight * 2;
+}
+
+.lost-container > .call-to-action {
+  font-size: @baseFontSize * 1.5;
+  line-height: @baseLineHeight * 1.5;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+.lost-container a, .lost-container a:visited, .lost-container a:hover {
+  color: white;
+  text-decoration: underline
+}
+
+// Responsive ftw
+@import "responsive.less";

@@ -91,11 +91,12 @@ s.parentNode.insertBefore(po, s);
 				</div>
 				<div class="one-fourth">
 					<div class="well">
-						<h1>Updates</h1>
-						<ul class="updates">
-							<li><a href="/updates/blah">Did something cool</a></li>
-							<li><a href="/updates/blah2">Did something else cool</a></li>
-						</ul>
+						<h1>Updates</h1>{% if page.updates %}{% capture updatelist %}{% for update in site.categories[page.updates] reversed %}
+						<li><strong>{{ update.date | date:"%Y-%m-%d" }}:</strong> <a href="{{ update.url }}">{{ update.title }}</a></li>{% endfor %}{% endcapture %}{% if updatelist != '' %}
+						<ul class="updates">{{ updatelist }}
+						</ul>{% else %}
+						<p class="updates">No updates yet. Subscribe to <a href="/feeds/{{ page.updates }}" title="{{ page.title }} updates feed">the feed</a> to be kept up to date.</p>{% endif %}{% else %}
+						<p class="updates">No updates.</p>{% endif %}
 					</div>
 				</div>
       </div>

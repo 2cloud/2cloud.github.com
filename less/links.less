@@ -1,0 +1,101 @@
+@import "base.less";
+
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.centered {
+  .center-block();
+}
+
+#send-link-device, #send-link-url, #send-link-submit {
+  padding: .4%;
+  margin: 0;
+  float: none;
+}
+
+#send-link-url {
+  margin-left: 0px;
+  margin-right: (((@fluidGridColumnWidth * @gridColumns) + (@fluidGridGutterWidth * (@gridColumns - 1))) / 48) - 1.2;
+}
+
+#send-link-device {
+  margin-right: (((@fluidGridColumnWidth * @gridColumns) + (@fluidGridGutterWidth * (@gridColumns - 1))) / 36) - 1.2;
+  margin-left: (((@fluidGridColumnWidth * @gridColumns) + (@fluidGridGutterWidth * (@gridColumns - 1))) / 48) - 1.2;
+}
+
+#send-link-form {
+  margin: 0;
+}
+
+#send-link-container {
+  padding: 10px 10px 0px 10px;
+}
+
+#send-link-inputs {
+  margin-bottom: 20px;
+}
+
+.send-link-toggle {
+  cursor: pointer;
+}
+
+.send-link-toggle i {
+  vertical-align: top;
+  margin: 0px;
+  line-height: @baseLineHeight;
+  .close
+}
+
+.send-link-toggle.invert i {
+  .rotate(180deg);
+}
+
+#send-link-label {
+  margin: 0;
+  border: 0;
+  line-height: @baseLineHeight;
+  padding-bottom: 15px;
+}
+
+.links th {
+  font-size: 11px;
+  #gradient > .vertical(#f5f5f5, #eee);
+  font-weight: bold;
+  color: #999999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: @baseFontSize * 1.5;
+}
+
+td.comment {
+  padding: 4px;
+  padding-left: 8px;
+  font-size: @baseFontSize * .9;
+  line-height: @baseLineHeight * .9;
+  background-color: #EDF0F3;
+}
+
+td.comment > span.label {
+  line-height: @baseLineHeight * .9;
+}
+
+#links-per-page-slider > .ui-slider-handle {
+  border: 1px solid @linkColorHover;
+  #gradient > .vertical(@linkColor, @blue);
+}
+
+@import "responsive.less";
