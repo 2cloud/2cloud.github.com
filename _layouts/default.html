@@ -43,9 +43,9 @@ s.parentNode.insertBefore(po, s);
           <a tabIndex="-1" class="brand" href="#">2cloud</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li class="active"><a tabIndex="-1" href="index.html"><i class="icon-large icon-home"></i>Home</a></li>
-              <li><a tabIndex="-1" href="#about"><i class="icon-large icon-info-sign"></i>About</a></li>
-              <li><a tabIndex="-1" href="links.html"><i class="icon-large icon-list"></i>Link History</a></li>
+							<li><a tabIndex="-1" href="http://www.2cloud.org"><i class="icon-large icon-home"></i>Home</a></li>
+              <li><a tabIndex="-1" href="http://www.2cloud.org/about"><i class="icon-large icon-info-sign"></i>About</a></li>
+							<li class="active"><a tabIndex="-1" href="/"><i class="icon-large icon-download"></i>Download</a></li>
               <li class="dropdown" id="contact">
                 <a tabIndex="-1" href="#contact" data-toggle="dropdown"><i class="icon-large icon-comments"></i>Contact <i class="icon-chevron-down"></i></a>
                 <ul class="dropdown-menu">
@@ -57,88 +57,48 @@ s.parentNode.insertBefore(po, s);
                   <li><a tabIndex="-1" href="email"><i class="icon-large icon-envelope"></i>Email</a></li>
                 </ul>
               </li>
-              <li><a tabIndex="-1" href="http://help.2cloud.org" target="_blank"><i class="icon-large icon-question-sign"></i>Support</a></li>
-            </ul>
-            <ul class="nav pull-right">
-              <li class="dropdown" id="user">
-                      <a tabIndex="-1" href="#user" data-toggle="dropdown"><i class="icon-large icon-user"></i>Paddy Foran <i class="icon-chevron-down"></i></a>
-                <ul class="dropdown-menu">
-                  <li><a tabIndex="-1" href="settings"><i class="icon-large icon-cogs"></i>Settings</a></li>
-                  <li><a tabIndex="-1" href="billing"><i class="icon-large icon-shopping-cart"></i>Payment Info</a></li>
-                  <li class="divider"></li>
-                  <li><a tabIndex="-1" href="logout"><i class="icon-large icon-signout"></i>Sign Out</a></li>
-                </ul>
-              </li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="welcome">
-        <h1 class="huge clearfix">Welcome to 2cloud.<a class="btn btn-primary btn-large pull-right">Get Started</a></h1>
-        <p class="intro">Your devices want to talk to each other. Let them.</p>
-        <p>2cloud helps you move links between your devices. Share a link with it, and the link will instantly open on whatever device you want.</p>
-        <div class="diagram-container">
-          <img src="img/frontpage/android.png" class="diagram" />
-          <img src="img/frontpage/arrow.png" class="diagram arrow" />
-          <img src="img/frontpage/2cloud.png" class="diagram" />
-          <img src="img/frontpage/doublearrow.png" class="diagram arrow" />
-          <img src="img/frontpage/chrome.png" class="diagram" />
-        </div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="three-fourths">
+					<div class="row-fluid">
+						<div class="welcome">
+  					  <h1 class="huge clearfix">Make it your own.</h1>
+    	        <p class="intro">Host your own instance of 2cloud. Own your data.</p>
+							<p>We open source <em>all</em> of the software running on <a href="http://www.2cloud.org" title="2cloud.org">2cloud.org</a> under the <a href="http://www.opensource.org/licenses/mit-license.php" title="The MIT License">the MIT license</a>, and we strive to make it simple to administer your own data.</p>
+							<p>We think it's important that you have the option to own your data completely. We offer a hosted instance for the users that don't have the technical skill or desire to run their own instance, but we absolutely refuse to lock people into using it.</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="one-half">
+							<div class="well">
+								<h1>First section</h1>
+								<p>This would be the first part.</p>
+							</div>
+						</div>
+						<div class="one-half">
+							<div class="well">
+								<h1>Second section</h1>
+								<p>This would be the second part.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="one-fourth">
+					<div class="well">
+						<h1>Updates</h1>
+						<ul class="updates">
+							<li><a href="/updates/blah">Did something cool</a></li>
+							<li><a href="/updates/blah2">Did something else cool</a></li>
+						</ul>
+					</div>
+				</div>
       </div>
-      <div class="row-fluid values">
-        <div class="one-third">
-          <h2>Your Data. Not Ours.</h2>
-          <p>We don't want your data, we want to help you make use of it. Our <a href="/privacy" title="Privacy Policy">privacy policy</a> is simple: <em class="highlight">&quot;do not surprise the user.&quot;</em> We try to be up-front about any data we collect, and we hope if you have questions you'll <a href="/contact" title="We don't bite.">get in touch</a>.</p>
-          <p>Nobody likes being spied on. Our solution is simple: we don't spy on you.</p>
-        </div>
-        <div class="one-third">
-          <h2>Tap. Share. Anywhere.</h2>
-          <p>We are slowly but surely supporting new devices and clients. We want to give you a native, seamless experience wherever you get your content and wherever you want to see it.</p>
-          <p>Building an <em class="highlight">awesome, native, and intuitive</em> experience takes time. Please be patient as we work to support your preferred platform.</p>
-        </div>
-        <div class="one-third">
-          <h2>Sharing is Caring.</h2>
-          <p>We like to think that <a href="http://www.secondbit.org" title="Second Bit" target="_blank">Second Bit</a> has a <em class="highlight">pretty awesome team</em>, but we're not perfect. Fortunately, we don't have to be: 2cloud is completely, 100% <a href="http://www.github.com/2cloud" target="_blank" title="2cloud on Github">open-source software</a>.</p>
-          <p>If we're not doing something as well as we could be, or if you have a great idea for a new feature, let us know. We like when users file issues. We <em>love</em> when users send pull requests.</p>
-        </div>
-      </div>
-      <div class="pricing">
-        <h2>Pricing</h2>
-        <p class="intro">Providing a web service to thousands of users is not cheap. We wish we could offer 2cloud for free, but wishing doesn't pay the server bills. To use our server (you can easily <a href="#">host your own</a>), you need to pay a small monthly fee.</p>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Payment Frequency</th><th>Cost per Month</th><th>Cost per Year</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Every Month</td><td style="text-align: right;">1 USD</td><td style="text-align: right;">12 USD</td>
-            </tr>
-            <tr>
-              <td>Every Year*</td><td style="text-align: right;">0.67 USD</td><td style="text-align: right;">8 USD</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>* You can choose to pay for a year up-front instead of every month, in exchange for a reduced price. You will only be billed once a year.</p>
-      </div>
-      <div class="share-container">
-        <div class="row-fluid">
-          <div class="one-third">
-            <div class="fb-like-box" data-href="http://www.facebook.com/2cloud" data-width="292" data-show-faces="false" data-stream="false" data-header="false"></div>
-          </div>
-          <div class="one-third">
-            <div class="g-plus" style="margin: 0px auto;" data-href="https://plus.google.com/104417289273809393518?rel=publisher" data-width="292" data-height="69" data-theme="light"></div>
-          </div>
-          <div class="one-third" style="text-align: right; margin-top: 15px">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.2cloud.org" data-text="Your devices want to talk to each other. Let them." data-via="2cloudproject" data-size="large" data-related="2cloudproject" data-count="none" data-hashtags="TapShareAnywhere">Tweet</a> <a href="https://twitter.com/2cloudproject" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @2cloudproject</a>                
-          </div>
-        </div>
-      </div>
-
     </div> <!-- /container -->
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
